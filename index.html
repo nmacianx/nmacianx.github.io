@@ -1,8 +1,665 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Nicolas Macian">
+    <meta name="description" content="Nicolas Macian's portfolio">
+    <title>Nicolas Macian</title>
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+    <!-- Bootstrap ref -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/override.css" />
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>@nmacian</p>
+    <div class="custom-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand initials-custom" href="./index.html">NM</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item" onclick="customScroll('#portfolio', 500)">
+                            <a class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item" onclick="customScroll('#work', 1000)">
+                            <a class="nav-link">Experience</a>
+                        </li>
+                        <li class="nav-item" onclick="customScroll('#education', 1500)">
+                            <a class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item" onclick="customScroll('#contact', 2000)">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container custom-hero">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-12 col-md-5 custom-hero-text">
+                    <div class="custom-hero-title">Hi, I'm Nicolas</div>
+                    <div class="custom-hero-description">I'm an advanced Computer Engineering student and full stack web
+                        developer.</div>
+                    <div onclick="customScroll('#contact', 2000)" class="custom-hero-button zoom">Contact me</div>
+                </div>
+                <div
+                    class="col-sm-12 col-md-5 d-flex justify-content-center justify-content-md-end order-first order-md-0 hero-image-container">
+                    <img class="custom-header-image" src="./img/me_r.jpg" alt="Nicolas Macian">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section-container section-one" id="portfolio">
+        <div class="container">
+            <div class="section-title text-center">Portfolio</div>
+            <div class="one-content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row portfolio-row" id="portfolio-row-3" data-hidden>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center one-more-button" id="one-more-button">
+                    <div onclick="showMore()" class="portfolio-button zoom">See all</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container section-two" id="work">
+        <div class="container">
+            <div class="section-title text-center">Work experience</div>
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container">
+                        <img src="./img/exp_scania.png" alt="Scania">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="two-item-content">
+                        <div class="d-flex flex-row align-items-end">
+                            <div class="two-item-company mr-2">Scania</div>
+                            <div class="mx-2">-</div>
+                            <div class="two-item-location ml-2">Tucuman, Argentina</div>
+                        </div>
+                        <div class="two-item-job">IT Intern</div>
+                        <div class="two-item-date mb-3">Feb 2020 - present</div>
+                        <div class="two-item-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container two-logo-text">
+                        Elemento
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="two-item-content">
+                        <div class="d-flex flex-row align-items-end">
+                            <div class="two-item-company mr-2">Elemento</div>
+                            <div class="mx-2">-</div>
+                            <div class="two-item-location ml-2">Remote</div>
+                        </div>
+                        <div class="two-item-job">Full Stack Web Developer</div>
+                        <div class="two-item-date mb-3">May 2019 - present</div>
+                        <div class="two-item-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container two-logo-container2">
+                        <img src="./img/ed_unt.png" alt="Universidad Nacional de Tucuman">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="two-item-content">
+                        <div class="two-item-company mr-2">Facultad de Ciencias Exactas y Tecnología</div>
+                        <div class="two-item-job">Teaching assistant</div>
+                        <div class="two-item-date mb-3">Oct 2018 - present</div>
+                        <div class="two-item-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container section-three" id="education">
+        <div class="container">
+            <div class="section-title text-center">Education</div>
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container three-logo-container">
+                        <img src="./img/ed_unt.png" alt="Universidad Nacional de Tucuman">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="three-item-content">
+                        <div class="three-item-title mb-3">Computer Engineering student</div>
+                        <a href="https://www.facet.unt.edu.ar/" target="_blank">
+                            <div class="three-item-subtitle">Facultad de Ciencias Exactas y Tecnología</div>
+                        </a>
+                        <a href="http://www.unt.edu.ar/" target="_blank">
+                            <div class="three-item-subtitle">Universidad Nacional de Tucuman</div>
+                        </a>
+                        <div class="three-item-small">2016 - mid 2020 (expected)</div>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider w-50" />
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Applied Machine Learning in Python</div>
+                        <div class="three-item-by mb-1">by Univerity of Michigan</div>
+                        <div class="three-item-date mb-1">Mar 2020</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/QJBH3LP9RVBF" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Deep Learning Specialization</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Jan 2020</div>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/FYBUEFSNUSWE"
+                            target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Sequence Models</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Jan 2020</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/S4BG28UL9BQ4" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Convolutional Neural Networks</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Nov 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/GX2QK2PAYL7S" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" id="education-row-3" data-hidden>
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Applied Plotting, Charting & Data
+                            Representation in Python</div>
+                        <div class="three-item-by mb-1">by Univerity of Michigan</div>
+                        <div class="three-item-date mb-1">Oct 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/VJMVSAGBKF2J" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Structuring Machine Learning Projects
+                        </div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Oct 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/ALT5AP679RQA" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" id="education-row-4" data-hidden>
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Improving Deep Neural Networks:
+                            Hyperparameter tuning, Regularization and Optimization</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Sept 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/7XUJKNQ6VFUK" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Introduction to Data Science in Python
+                        </div>
+                        <div class="three-item-by mb-1">by Univerity of Michigan</div>
+                        <div class="three-item-date mb-1">Sept 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/HR5BZSWJHUNJ" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" id="education-row-5" data-hidden>
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Neural Networks and Deep Learning</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Aug 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/EFR5P595JHU4" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Machine Learning</div>
+                        <div class="three-item-by mb-1">by Stanford University</div>
+                        <div class="three-item-date mb-1">Aug 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/QUQS8TWY94LX" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center one-more-button" id="three-more-button">
+                <div onclick="showMoreCourses()" class="portfolio-button zoom">See all</div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container section-four" id="contact">
+        <div class="container">
+            <div class="section-title text-center">Contact</div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a class="zoom"
+                        href="mailto:contact@nicolasmacian.com.ar?subject=Contact%20from%20portfolio%20website"
+                        target="_blank"><img class="bigger-icon" src="./img/ct_mail.png" alt="Email"></a>
+                    <a class="zoom" href="https://www.linkedin.com/in/nicolas-macian/    " target="_blank"><img
+                            src="./img/ct_linkedin.png" alt="LinkedIn"></a>
+                    <a class="zoom" href="https://github.com/nmacianx" target="_blank"><img src="./img/ct_github.png"
+                            alt="Github"></a>
+                </div>
+            </div>
+            <div class="row or-row justify-content-center my-4">
+                OR
+            </div>
+            <div class="row no-gutters">
+                <form action="https://send.pageclip.co/BWohoJeXyiqlkrXtqU6CE4h8D8dHO0CJ/Contact" class="pageclip-form d-flex flex-column"
+                    method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your email address" required/>
+                    </div>               
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required/>
+                    </div>           
+                    <div class="form-group">
+                        <textarea name="body" class="form-control" rows="4" placeholder="Type your message here" required></textarea>
+                    </div>                          
+                    <button class="btn btn-primary btn-contact pageclip-form__submit" type="submit">
+                        <span>Submit</span>
+                    </button>
+                </form>
+            </div>            
+        </div>
+    </div>
+    <div class="section-five">
+        <div class="container">
+            <div class="row align-items-center  ">
+                <div class="col-md-6 offset-md-3 col-sm-12">
+                    <div class="five-text text-center">© 2020 - Nicolas Macian</div>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex justify-content-center justify-content-md-end">
+                    <div id="attributes" class="attribution-text" data-toggle="tooltip" data-placement="top"
+                        title="Icons made by Freepik from www.flaticon.com">
+                        Attributions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#modalCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#modalCarousel" data-slide-to="1"></li>
+                            <li data-target="#modalCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./img/portfolio00.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./img/portfolio00.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./img/portfolio00.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#modalCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#modalCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="modal-text">
+                        <div class="modal-text-title">Project description</div>
+                        <div class="modal-text-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
+
 </html>
