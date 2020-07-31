@@ -25,6 +25,10 @@
     opacity: 0.7;
 }
 
+.modal a .disabled{
+    cursor: default;
+}
+
 @media (min-width: 768px){
     .section-four .form-control{ 
         font-size: 22px;

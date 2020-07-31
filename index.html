@@ -40,11 +40,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./css/override.css" />
-
+   
+    <!-- AOS -->
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163889905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-163889905-1');
+    </script>
 </head>
 
 <body>
+    <div class="preloader">
+        <img src="./img/spinner1.svg" alt="spinner">
+        <img class="preloader-overlay"src="./img/logo.png" alt="Nicolas Macian">
+    </div>    
     <div class="custom-header">
+        <div id="particles-js"></div>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand initials-custom" href="./index.html">NM</a>
@@ -74,13 +89,13 @@
         </nav>
         <div class="container custom-hero">
             <div class="row justify-content-between align-items-center">
-                <div class="col-sm-12 col-md-5 custom-hero-text">
-                    <div class="custom-hero-title">Hi, I'm Nicolas</div>
-                    <div class="custom-hero-description">I'm an advanced Computer Engineering student and full stack web
-                        developer.</div>
+                <div class="col-sm-12 col-md-5 custom-hero-text" data-aos="slide-right" data-aos-delay="300">
+                    <div class="custom-hero-title">Hi, I'm Nicolas!</div>
+                    <div class="custom-hero-description">I'm an advanced Computer Engineering student, Full Stack Web
+                        developer and AI enthusiast.</div>        
                     <div onclick="customScroll('#contact', 2000)" class="custom-hero-button zoom">Contact me</div>
                 </div>
-                <div
+                <div data-aos="slide-left" data-aos-delay="300"
                     class="col-sm-12 col-md-5 d-flex justify-content-center justify-content-md-end order-first order-md-0 hero-image-container">
                     <img class="custom-header-image" src="./img/me_r.jpg" alt="Nicolas Macian">
                 </div>
@@ -93,13 +108,32 @@
             <div class="section-title text-center">Portfolio</div>
             <div class="one-content">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-title">Edumovil</div>
                                 <div class="card-text">
-                                    Sweepstakes site.
+                                    School's communication and administration system.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-warning">Ionic</span>
+                                    <span class="badge badge-pill badge-success">Angular</span>
+                                    <span class="badge badge-pill badge-danger">Sass</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="edumovil">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">First Horizon Park</div>
+                                <div class="card-text">
+                                    Update for custom postcard creation site.
                                 </div>
                                 <div class="card-badges">
                                     <span class="badge badge-pill badge-primary">Django</span>
@@ -112,30 +146,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
-                                <div class="card-text">
-                                    Sweepstakes site.
-                                </div>
-                                <div class="card-badges">
-                                    <span class="badge badge-pill badge-primary">Django</span>
-                                    <span class="badge badge-pill badge-success">HTML</span>
-                                    <span class="badge badge-pill badge-success">CSS</span>
-                                    <span class="badge badge-pill badge-warning">Javascript</span>
-                                </div>
-                                <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
-                            <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-title">Day Owl Rose</div>
                                 <div class="card-text">
                                     Sweepstakes site.
                                 </div>
@@ -152,7 +167,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
@@ -171,13 +186,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-title">First Horizon Park</div>
                                 <div class="card-text">
-                                    Sweepstakes site.
+                                    Holidays' postcards creation wizard site.
                                 </div>
                                 <div class="card-badges">
                                     <span class="badge badge-pill badge-primary">Django</span>
@@ -190,11 +205,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-title">Hills academy</div>
                                 <div class="card-text">
                                     Sweepstakes site.
                                 </div>
@@ -215,7 +230,7 @@
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-title">Duckhorn Pizza</div>
                                 <div class="card-text">
                                     Sweepstakes site.
                                 </div>
@@ -234,7 +249,7 @@
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-title">Prana</div>
                                 <div class="card-text">
                                     Sweepstakes site.
                                 </div>
@@ -253,7 +268,7 @@
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-title">Robert Hall</div>
                                 <div class="card-text">
                                     Sweepstakes site.
                                 </div>
@@ -268,6 +283,27 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row portfolio-row" id="portfolio-row-4" data-hidden>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Duckhorn Traeger</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>                
                 </div>
                 <div class="row justify-content-center one-more-button" id="one-more-button">
                     <div onclick="showMore()" class="portfolio-button zoom">See all</div>
@@ -277,8 +313,8 @@
     </div>
     <div class="section-container section-two" id="work">
         <div class="container">
-            <div class="section-title text-center">Work experience</div>
-            <div class="row justify-content-center align-items-center">
+            <div class="section-title text-center" data-aos="fade-up">Work experience</div>
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
                 <div
                     class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
                     <div class="two-logo-container">
@@ -295,14 +331,12 @@
                         <div class="two-item-job">IT Intern</div>
                         <div class="two-item-date mb-3">Feb 2020 - present</div>
                         <div class="two-item-description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley
+                            As an IT intern, my role varies across multiple tasks. Most of the time I provide hardware, software and network support for the factory's personnel. I also work on personal projects for the company.
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
                 <div
                     class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
                     <div class="two-logo-container two-logo-text">
@@ -319,14 +353,12 @@
                         <div class="two-item-job">Full Stack Web Developer</div>
                         <div class="two-item-date mb-3">May 2019 - present</div>
                         <div class="two-item-description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley
+                            I develop both frontend and backend for custom web projects using technologies such as Django, Javascript, HTML and CSS. I work for US clients, through Southern Made company.
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
                 <div
                     class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
                     <div class="two-logo-container two-logo-container2">
@@ -339,9 +371,7 @@
                         <div class="two-item-job">Teaching assistant</div>
                         <div class="two-item-date mb-3">Oct 2018 - present</div>
                         <div class="two-item-description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley
+                            I teach and help students learn about the design of algorithms and programming in C. I work for the courses "Informatics" and "Programming I" which are taught to first and second year students.
                         </div>
                     </div>
                 </div>
@@ -350,8 +380,8 @@
     </div>
     <div class="section-container section-three" id="education">
         <div class="container">
-            <div class="section-title text-center">Education</div>
-            <div class="row justify-content-center align-items-center">
+            <div class="section-title text-center" data-aos="fade-up">Education</div>
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
                 <div
                     class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
                     <div class="two-logo-container three-logo-container">
@@ -368,18 +398,19 @@
                             <div class="three-item-subtitle">Universidad Nacional de Tucuman</div>
                         </a>
                         <div class="three-item-small">2016 - mid 2020 (expected)</div>
+                        <div class="three-item-description mt-2">I am developing a facial verification system on a Raspberry Pi 4 as my graduation project.</div>
                     </div>
                 </div>
             </div>
             <hr class="divider w-50" />
             <div class="row justify-content-center align-items-center">
-                <div
-                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                <div 
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
                     <div class="two-logo-container three-logo-container three-logo-container-min">
                         <img src="./img/ed_coursera.png" alt="Coursera">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
                     <div class="three-item-content align-items-center align-items-lg-start">
                         <div class="three-item-name text-center text-lg-left">Applied Machine Learning in Python</div>
                         <div class="three-item-by mb-1">by Univerity of Michigan</div>
@@ -391,12 +422,12 @@
                 </div>
 
                 <div
-                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
                     <div class="two-logo-container three-logo-container three-logo-container-min">
                         <img src="./img/ed_coursera.png" alt="Coursera">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
                     <div class="three-item-content align-items-center align-items-lg-start">
                         <div class="three-item-name text-center text-lg-left">Deep Learning Specialization</div>
                         <div class="three-item-by mb-1">by deeplearning.ai</div>
@@ -410,12 +441,12 @@
             </div>
             <div class="row justify-content-center align-items-center">
                 <div
-                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
                     <div class="two-logo-container three-logo-container three-logo-container-min">
                         <img src="./img/ed_coursera.png" alt="Coursera">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up"> 
                     <div class="three-item-content align-items-center align-items-lg-start">
                         <div class="three-item-name text-center text-lg-left">Sequence Models</div>
                         <div class="three-item-by mb-1">by deeplearning.ai</div>
@@ -427,12 +458,12 @@
                 </div>
 
                 <div
-                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
                     <div class="two-logo-container three-logo-container three-logo-container-min">
                         <img src="./img/ed_coursera.png" alt="Coursera">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
                     <div class="three-item-content align-items-center align-items-lg-start">
                         <div class="three-item-name text-center text-lg-left">Convolutional Neural Networks</div>
                         <div class="three-item-by mb-1">by deeplearning.ai</div>
@@ -552,18 +583,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center one-more-button" id="three-more-button">
+            <div class="row justify-content-center one-more-button" id="three-more-button" data-aos="fade-up">
                 <div onclick="showMoreCourses()" class="portfolio-button zoom">See all</div>
             </div>
         </div>
     </div>
     <div class="section-container section-four" id="contact">
         <div class="container">
-            <div class="section-title text-center">Contact</div>
-            <div class="row">
+            <div class="section-title text-center" data-aos="fade-up">Contact</div>
+            <div class="row" data-aos="fade-up">
                 <div class="col-12 d-flex justify-content-center align-items-center">
                     <a class="zoom"
-                        href="mailto:contact@nicolasmacian.com.ar?subject=Contact%20from%20portfolio%20website"
+                        href="mailto:contact@nicolasmacian.com.ar?subject=Contact%20from%20your%20portfolio's%20website"
                         target="_blank"><img class="bigger-icon" src="./img/ct_mail.png" alt="Email"></a>
                     <a class="zoom" href="https://www.linkedin.com/in/nicolas-macian/    " target="_blank"><img
                             src="./img/ct_linkedin.png" alt="LinkedIn"></a>
@@ -571,12 +602,14 @@
                             alt="Github"></a>
                 </div>
             </div>
-            <div class="row or-row justify-content-center my-4">
+            <div class="row or-row justify-content-center my-4" data-aos="fade-up">
                 OR
             </div>
-            <div class="row no-gutters">
+            <div class="row no-gutters" data-aos="fade-up">
                 <form action="https://send.pageclip.co/BWohoJeXyiqlkrXtqU6CE4h8D8dHO0CJ/Contact" class="pageclip-form d-flex flex-column"
                     method="post">
+                    <div class="form-message1 mb-3 alert alert-danger">Something went wrong with the form submission. Please send an email or try again later.</div>
+                    <div class="form-message2 mb-3 alert alert-success">Form submission was successful. I'll be in touch shortly.</div>
                     <div class="form-group">
                         <input type="email" class="form-control" name="email" placeholder="Your email address" required/>
                     </div>               
@@ -601,7 +634,7 @@
                 </div>
                 <div class="col-md-3 col-sm-12 d-flex justify-content-center justify-content-md-end">
                     <div id="attributes" class="attribution-text" data-toggle="tooltip" data-placement="top"
-                        title="Icons made by Freepik from www.flaticon.com">
+                        title="Icons made by Freepik from www.flaticon.com. Spinner icon from loading.io">
                         Attributions
                     </div>
                 </div>
@@ -621,22 +654,8 @@
                 </div>
                 <div class="modal-body">
                     <div id="modalCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#modalCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#modalCarousel" data-slide-to="1"></li>
-                            <li data-target="#modalCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="./img/portfolio00.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/portfolio00.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/portfolio00.jpg" alt="Third slide">
-                            </div>
-                        </div>
+                        <ol class="carousel-indicators"></ol>
+                        <div class="carousel-inner"></div>
                         <a class="carousel-control-prev" href="#modalCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -648,17 +667,19 @@
                     </div>
                     <div class="modal-text">
                         <div class="modal-text-title">Project description</div>
-                        <div class="modal-text-description">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley
-                        </div>
+                        <div class="modal-text-description"></div>
                     </div>
+                    <div class="modal-state align-items-center"></div>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init({startEvent: 'load', duration: 1500, once: true});
+    </script>
+    <script type="text/javascript" src="./js/particles.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
