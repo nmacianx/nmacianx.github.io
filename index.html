@@ -1,8 +1,713 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Nicolas Macian">
+    <meta name="description" content="Nicolas Macian's portfolio">
+    <title>Nicolas Macian</title>
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+    <!-- Bootstrap ref -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/override.css" />
+   
+    <!-- AOS -->
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163889905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-163889905-1');
+    </script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>@nmacian</p>
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="./img/spinner1.svg" alt="spinner">
+            <img class="preloader-overlay"src="./img/logo.png" alt="Nicolas Macian">
+        </div>
+        <div class="preloader-soon">Coming soon...</div>
+    </div>    
+    <div class="custom-header">
+        <div id="particles-js"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand initials-custom" href="./index.html">NM</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item" onclick="customScroll('#portfolio', 500)">
+                            <a class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item" onclick="customScroll('#work', 1000)">
+                            <a class="nav-link">Experience</a>
+                        </li>
+                        <li class="nav-item" onclick="customScroll('#education', 1500)">
+                            <a class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item" onclick="customScroll('#contact', 2000)">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container custom-hero">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-12 col-md-5 custom-hero-text" data-aos="slide-right" data-aos-delay="300">
+                    <div class="custom-hero-title">Hi, I'm Nicolas!</div>
+                    <div class="custom-hero-description">I'm an advanced Computer Engineering student, Full Stack Web
+                        developer and AI enthusiast.</div>        
+                    <div onclick="customScroll('#contact', 2000)" class="custom-hero-button zoom">Contact me</div>
+                </div>
+                <div data-aos="slide-left" data-aos-delay="300"
+                    class="col-sm-12 col-md-5 d-flex justify-content-center justify-content-md-end order-first order-md-0 hero-image-container">
+                    <img class="custom-header-image" src="./img/me_r.jpg" alt="Nicolas Macian">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section-container section-one" id="portfolio">
+        <div class="container">
+            <div class="section-title text-center">Portfolio</div>
+            <div class="one-content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Edumovil</div>
+                                <div class="card-text">
+                                    School's communication and administration system.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-warning">Ionic</span>
+                                    <span class="badge badge-pill badge-success">Angular</span>
+                                    <span class="badge badge-pill badge-danger">Sass</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="edumovil">More details</button>
+                                    <a href="http://edumovil.equiser.com.ar/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio05.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">A+E Eats</div>
+                                <div class="card-text">
+                                    Form submission site for food ordering.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio07.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Stop&Shop Summer</div>
+                                <div class="card-text">
+                                    Promotion site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <a href="http://www.stopandshopsummer.com/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio06.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Caylee Hammack</div>
+                                <div class="card-text">
+                                    Sweepstakes site with image creation wizard.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                                <a href="https://www.ifitwasntforyousweeps.com/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio02.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">First Horizon Park</div>
+                                <div class="card-text">
+                                    Website and postcards' design update for previously developed site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                                <a href="https://www.firsthorizonparkpostcard.com/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio03.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Day Owl Rose</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row portfolio-row" id="portfolio-row-3" data-hidden>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio01.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Z. Alexander Brown</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio04.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">First Horizon Park</div>
+                                <div class="card-text">
+                                    Holidays' postcards creation wizard site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio08.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Hill's Pet Academy</div>
+                                <div class="card-text">
+                                    Demo site for Hill's Pet Academy.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio09.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Prana</div>
+                                <div class="card-text">
+                                    "Dream Job" Promotion site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio10.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Robert Hall</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Duckhorn Traeger</div>
+                                <div class="card-text">
+                                    Sweepstakes site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                            </div>
+                        </div>
+                    </div>             -->
+                </div>
+                <div class="row justify-content-center one-more-button" id="one-more-button">
+                    <div onclick="showMore()" class="portfolio-button zoom">See all</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container section-two" id="work">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">Work experience</div>
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container">
+                        <img src="./img/exp_scania.png" alt="Scania">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="two-item-content">
+                        <div class="d-flex flex-row align-items-end">
+                            <div class="two-item-company mr-2">Scania</div>
+                            <div class="mx-2">-</div>
+                            <div class="two-item-location ml-2">Tucuman, Argentina</div>
+                        </div>
+                        <div class="two-item-job">IT Intern</div>
+                        <div class="two-item-date mb-3">Feb 2020 - present</div>
+                        <div class="two-item-description">
+                            As an IT intern, my role varies across multiple tasks. Most of the time I provide hardware, software and network support for the factory's personnel. I also work on personal projects for the company.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container two-logo-text">
+                        Elemento
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="two-item-content">
+                        <div class="d-flex flex-row align-items-end">
+                            <div class="two-item-company mr-2">Elemento</div>
+                            <div class="mx-2">-</div>
+                            <div class="two-item-location ml-2">Remote</div>
+                        </div>
+                        <div class="two-item-job">Full Stack Web Developer</div>
+                        <div class="two-item-date mb-3">May 2019 - present</div>
+                        <div class="two-item-description">
+                            I develop both frontend and backend for custom web projects using technologies such as Django, Javascript, HTML and CSS. I work for US clients through Southern Made company.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container two-logo-container2">
+                        <img src="./img/ed_unt.png" alt="Universidad Nacional de Tucuman">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="two-item-content">
+                        <div class="two-item-company mr-2">Facultad de Ciencias Exactas y Tecnología</div>
+                        <div class="two-item-job">Teaching assistant</div>
+                        <div class="two-item-date mb-3">Oct 2018 - present</div>
+                        <div class="two-item-description">
+                            I teach and help students learn about the design of algorithms and programming in C. I work for the courses "Informatics" and "Programming I" which are taught to first and second year students.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container section-three" id="education">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">Education</div>
+            <div class="row justify-content-center align-items-center" data-aos="fade-up">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <div class="two-logo-container three-logo-container">
+                        <img src="./img/ed_unt.png" alt="Universidad Nacional de Tucuman">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="three-item-content">
+                        <div class="three-item-title mb-3">Computer Engineering student</div>
+                        <a href="https://www.facet.unt.edu.ar/" target="_blank">
+                            <div class="three-item-subtitle">Facultad de Ciencias Exactas y Tecnología</div>
+                        </a>
+                        <a href="http://www.unt.edu.ar/" target="_blank">
+                            <div class="three-item-subtitle">Universidad Nacional de Tucuman</div>
+                        </a>
+                        <div class="three-item-small">2016 - mid 2020 (expected)</div>
+                        <div class="three-item-description mt-2">I am developing a facial verification system on a Raspberry Pi 4 as my graduation project.</div>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider w-50" />
+            <div class="row justify-content-center align-items-center">
+                <div 
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Applied Machine Learning in Python</div>
+                        <div class="three-item-by mb-1">by Univerity of Michigan</div>
+                        <div class="three-item-date mb-1">Mar 2020</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/QJBH3LP9RVBF" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Deep Learning Specialization</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Jan 2020</div>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/FYBUEFSNUSWE"
+                            target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up"> 
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Sequence Models</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Jan 2020</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/S4BG28UL9BQ4" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Convolutional Neural Networks</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Nov 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/GX2QK2PAYL7S" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" id="education-row-3" data-hidden>
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Applied Plotting, Charting & Data
+                            Representation in Python</div>
+                        <div class="three-item-by mb-1">by Univerity of Michigan</div>
+                        <div class="three-item-date mb-1">Oct 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/VJMVSAGBKF2J" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Structuring Machine Learning Projects
+                        </div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Oct 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/ALT5AP679RQA" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" id="education-row-4" data-hidden>
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Improving Deep Neural Networks:
+                            Hyperparameter tuning, Regularization and Optimization</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Sept 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/7XUJKNQ6VFUK" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Introduction to Data Science in Python
+                        </div>
+                        <div class="three-item-by mb-1">by Univerity of Michigan</div>
+                        <div class="three-item-date mb-1">Sept 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/HR5BZSWJHUNJ" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" id="education-row-5" data-hidden>
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Neural Networks and Deep Learning</div>
+                        <div class="three-item-by mb-1">by deeplearning.ai</div>
+                        <div class="three-item-date mb-1">Aug 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/EFR5P595JHU4" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-sm-12 col-md-4 col-lg-2 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0">
+                    <div class="two-logo-container three-logo-container three-logo-container-min">
+                        <img src="./img/ed_coursera.png" alt="Coursera">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4 mb-4 mb-lg-0">
+                    <div class="three-item-content align-items-center align-items-lg-start">
+                        <div class="three-item-name text-center text-lg-left">Machine Learning</div>
+                        <div class="three-item-by mb-1">by Stanford University</div>
+                        <div class="three-item-date mb-1">Aug 2019</div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/QUQS8TWY94LX" target="_blank">
+                            <div class="btn btn-primary">Verify</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center one-more-button" id="three-more-button" data-aos="fade-up">
+                <div onclick="showMoreCourses()" class="portfolio-button zoom">See all</div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container section-four" id="contact">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">Contact</div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a class="zoom"
+                        href="mailto:contact@nicolasmacian.com.ar?subject=Contact%20from%20your%20portfolio's%20website"
+                        target="_blank"><img class="bigger-icon" src="./img/ct_mail.png" alt="Email"></a>
+                    <a class="zoom" href="https://www.linkedin.com/in/nicolas-macian/    " target="_blank"><img
+                            src="./img/ct_linkedin.png" alt="LinkedIn"></a>
+                    <a class="zoom" href="https://github.com/nmacianx" target="_blank"><img src="./img/ct_github.png"
+                            alt="Github"></a>
+                </div>
+            </div>
+            <div class="row or-row justify-content-center my-4" data-aos="fade-up">
+                OR
+            </div>
+            <div class="row no-gutters" data-aos="fade-up">
+                <form action="https://send.pageclip.co/BWohoJeXyiqlkrXtqU6CE4h8D8dHO0CJ/Contact" class="pageclip-form d-flex flex-column"
+                    method="post">
+                    <div class="form-message1 mb-3 alert alert-danger">Something went wrong with the form submission. Please send an email or try again later.</div>
+                    <div class="form-message2 mb-3 alert alert-success">Form submission was successful. I'll be in touch shortly.</div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your email address" required/>
+                    </div>               
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required/>
+                    </div>           
+                    <div class="form-group">
+                        <textarea name="body" class="form-control" rows="4" placeholder="Type your message here" required></textarea>
+                    </div>                          
+                    <button class="btn btn-primary btn-contact pageclip-form__submit" type="submit">
+                        <span>Submit</span>
+                    </button>
+                </form>
+            </div>            
+        </div>
+    </div>
+    <div class="section-five">
+        <div class="container">
+            <div class="row align-items-center  ">
+                <div class="col-md-6 offset-md-3 col-sm-12">
+                    <div class="five-text text-center">© 2020 - Nicolas Macian</div>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex justify-content-center justify-content-md-end">
+                    <div id="attributes" class="attribution-text" data-toggle="tooltip" data-placement="top"
+                        title="Icons made by Freepik from www.flaticon.com. Spinner icon from loading.io">
+                        Attributions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators"></ol>
+                        <div class="carousel-inner"></div>
+                        <a class="carousel-control-prev" href="#modalCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#modalCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="modal-text">
+                        <div class="modal-text-title">Project description</div>
+                        <div class="modal-text-description"></div>
+                    </div>
+                    <div class="modal-state align-items-center"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init({startEvent: 'load', duration: 1500, once: true});
+    </script>
+    <script type="text/javascript" src="./js/particles.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
+
 </html>
