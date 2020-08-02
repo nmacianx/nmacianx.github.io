@@ -55,8 +55,11 @@
 
 <body>
     <div class="preloader">
-        <img src="./img/spinner1.svg" alt="spinner">
-        <img class="preloader-overlay"src="./img/logo.png" alt="Nicolas Macian">
+        <div class="preloader-content">
+            <img src="./img/spinner1.svg" alt="spinner">
+            <img class="preloader-overlay"src="./img/logo.png" alt="Nicolas Macian">
+        </div>
+        <div class="preloader-soon">Coming soon...</div>
     </div>    
     <div class="custom-header">
         <div id="particles-js"></div>
@@ -124,16 +127,52 @@
                                 </div>
                                 <button type="button" class="btn btn-secondary" data-toggle="modal"
                                     data-target="#portfolioModal" data-project="edumovil">More details</button>
+                                    <a href="http://edumovil.equiser.com.ar/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <img class="card-img-top" src="./img/portfolio05.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">First Horizon Park</div>
+                                <div class="card-title">A+E Eats</div>
                                 <div class="card-text">
-                                    Update for custom postcard creation site.
+                                    Form submission site for food ordering.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio07.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Stop&Shop Summer</div>
+                                <div class="card-text">
+                                    Promotion site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <a href="http://www.stopandshopsummer.com/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio06.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">Caylee Hammack</div>
+                                <div class="card-text">
+                                    Sweepstakes site with image creation wizard.
                                 </div>
                                 <div class="card-badges">
                                     <span class="badge badge-pill badge-primary">Django</span>
@@ -143,12 +182,33 @@
                                 </div>
                                 <button type="button" class="btn btn-secondary" data-toggle="modal"
                                     data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                                <a href="https://www.ifitwasntforyousweeps.com/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
                         <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <img class="card-img-top" src="./img/portfolio02.jpg" alt="Portfolio image">
+                            <div class="card-body">
+                                <div class="card-title">First Horizon Park</div>
+                                <div class="card-text">
+                                    Website and postcards' design update for previously developed site.
+                                </div>
+                                <div class="card-badges">
+                                    <span class="badge badge-pill badge-primary">Django</span>
+                                    <span class="badge badge-pill badge-success">HTML</span>
+                                    <span class="badge badge-pill badge-success">CSS</span>
+                                    <span class="badge badge-pill badge-warning">Javascript</span>
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
+                                <a href="https://www.firsthorizonparkpostcard.com/" target="_blank"><button type="button" class="btn btn-danger" data-project="edumovil">Visit website</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/portfolio03.jpg" alt="Portfolio image">
                             <div class="card-body">
                                 <div class="card-title">Day Owl Rose</div>
                                 <div class="card-text">
@@ -160,16 +220,14 @@
                                     <span class="badge badge-pill badge-success">CSS</span>
                                     <span class="badge badge-pill badge-warning">Javascript</span>
                                 </div>
-                                <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
-                <div class="row">
+                <div class="row portfolio-row" id="portfolio-row-3" data-hidden>
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
                         <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <img class="card-img-top" src="./img/portfolio01.jpg" alt="Portfolio image">
                             <div class="card-body">
                                 <div class="card-title">Z. Alexander Brown</div>
                                 <div class="card-text">
@@ -181,14 +239,12 @@
                                     <span class="badge badge-pill badge-success">CSS</span>
                                     <span class="badge badge-pill badge-warning">Javascript</span>
                                 </div>
-                                <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
                         <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <img class="card-img-top" src="./img/portfolio04.jpg" alt="Portfolio image">
                             <div class="card-body">
                                 <div class="card-title">First Horizon Park</div>
                                 <div class="card-text">
@@ -207,11 +263,11 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up">
                         <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <img class="card-img-top" src="./img/portfolio08.jpg" alt="Portfolio image">
                             <div class="card-body">
-                                <div class="card-title">Hills academy</div>
+                                <div class="card-title">Hill's Pet Academy</div>
                                 <div class="card-text">
-                                    Sweepstakes site.
+                                    Demo site for Hill's Pet Academy.
                                 </div>
                                 <div class="card-badges">
                                     <span class="badge badge-pill badge-primary">Django</span>
@@ -219,39 +275,16 @@
                                     <span class="badge badge-pill badge-success">CSS</span>
                                     <span class="badge badge-pill badge-warning">Javascript</span>
                                 </div>
-                                <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row portfolio-row" id="portfolio-row-3" data-hidden>
+                    </div>                  
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item">
                         <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
-                            <div class="card-body">
-                                <div class="card-title">Duckhorn Pizza</div>
-                                <div class="card-text">
-                                    Sweepstakes site.
-                                </div>
-                                <div class="card-badges">
-                                    <span class="badge badge-pill badge-primary">Django</span>
-                                    <span class="badge badge-pill badge-success">HTML</span>
-                                    <span class="badge badge-pill badge-success">CSS</span>
-                                    <span class="badge badge-pill badge-warning">Javascript</span>
-                                </div>
-                                <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <img class="card-img-top" src="./img/portfolio09.jpg" alt="Portfolio image">
                             <div class="card-body">
                                 <div class="card-title">Prana</div>
                                 <div class="card-text">
-                                    Sweepstakes site.
+                                    "Dream Job" Promotion site.
                                 </div>
                                 <div class="card-badges">
                                     <span class="badge badge-pill badge-primary">Django</span>
@@ -259,14 +292,12 @@
                                     <span class="badge badge-pill badge-success">CSS</span>
                                     <span class="badge badge-pill badge-warning">Javascript</span>
                                 </div>
-                                <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item">
                         <div class="card">
-                            <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
+                            <img class="card-img-top" src="./img/portfolio10.jpg" alt="Portfolio image">
                             <div class="card-body">
                                 <div class="card-title">Robert Hall</div>
                                 <div class="card-text">
@@ -278,14 +309,10 @@
                                     <span class="badge badge-pill badge-success">CSS</span>
                                     <span class="badge badge-pill badge-warning">Javascript</span>
                                 </div>
-                                <button type="button" class="btn btn-secondary" data-toggle="modal"
-                                    data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row portfolio-row" id="portfolio-row-4" data-hidden>
-                    <div class="col-sm-12 col-md-6 col-lg-4 one-item">
+                    <!-- <div class="col-sm-12 col-md-6 col-lg-4 one-item">
                         <div class="card">
                             <img class="card-img-top" src="./img/portfolio00.jpg" alt="Portfolio image">
                             <div class="card-body">
@@ -303,7 +330,7 @@
                                     data-target="#portfolioModal" data-project="zabmakerstable">More details</button>
                             </div>
                         </div>
-                    </div>                
+                    </div>             -->
                 </div>
                 <div class="row justify-content-center one-more-button" id="one-more-button">
                     <div onclick="showMore()" class="portfolio-button zoom">See all</div>
@@ -353,7 +380,7 @@
                         <div class="two-item-job">Full Stack Web Developer</div>
                         <div class="two-item-date mb-3">May 2019 - present</div>
                         <div class="two-item-description">
-                            I develop both frontend and backend for custom web projects using technologies such as Django, Javascript, HTML and CSS. I work for US clients, through Southern Made company.
+                            I develop both frontend and backend for custom web projects using technologies such as Django, Javascript, HTML and CSS. I work for US clients through Southern Made company.
                         </div>
                     </div>
                 </div>
@@ -642,7 +669,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel"
+    <!-- <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -673,7 +700,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script src="./js/aos.js"></script>
     <script>

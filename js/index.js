@@ -82,7 +82,6 @@ function populateModal(modal, info) {
 
 function showMore() {
     document.getElementById("portfolio-row-3").removeAttribute('data-hidden');
-    document.getElementById("portfolio-row-4").removeAttribute('data-hidden');
     document.getElementById("one-more-button").setAttribute('data-hidden', true);
     customScroll('#portfolio-row-3', 700, 50);
     AOS.refresh();
@@ -96,27 +95,23 @@ function showMoreCourses() {
     customScroll('#education-row-3', 700, 50);
 }
 
-// $('.preloader').fadeOut(1000, function() {
-//     preloader.style.display = 'none';
+// $(function () {
+//     var preloader = document.querySelector('.preloader');
+//     const fadeEffect = setInterval(function () {
+//         // if we don't set opacity 1 in CSS, then
+//         // it will be equaled to "" -- that's why
+//         // we check it, and if so, set opacity to 1
+//         if (!preloader.style.opacity) {
+//             preloader.style.opacity = 1;
+//         }
+//         if (preloader.style.opacity > 0) {
+//             preloader.style.opacity -= 0.1;
+//         } else {
+//             clearInterval(fadeEffect);
+//             preloader.style.display = 'none';
+//         }
+//     }, 100);
 // });
-
-$(function () {
-    var preloader = document.querySelector('.preloader');
-    const fadeEffect = setInterval(function () {
-        // if we don't set opacity 1 in CSS, then
-        // it will be equaled to "" -- that's why
-        // we check it, and if so, set opacity to 1
-        if (!preloader.style.opacity) {
-            preloader.style.opacity = 1;
-        }
-        if (preloader.style.opacity > 0) {
-            preloader.style.opacity -= 0.1;
-        } else {
-            clearInterval(fadeEffect);
-            preloader.style.display = 'none';
-        }
-    }, 100);
-});
 
 particles_config = {
     "particles": {
