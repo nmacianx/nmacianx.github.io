@@ -12,7 +12,11 @@ export class WelcomeComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit(): void {
-		particlesJS.load('particles-js', 'assets/particles.json', function () { console.log('callback - particles.js config loaded'); });
+		particlesJS.load('particles-js', 'assets/particles.json');
+	}
+
+	customScroll(target: string, offset: number){
+
 	}
 
 }
