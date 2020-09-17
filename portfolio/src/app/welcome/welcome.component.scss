@@ -6,16 +6,6 @@
     height: 100%;
 }
 
-.zoom {
-    transition: 0.5s;
-}
-
-.zoom:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .nav-link {
     font-family: 'Lato', sans-serif;
     font-weight: 400;

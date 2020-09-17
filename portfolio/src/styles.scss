@@ -2,3 +2,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.zoom {
+    transition: 0.5s;
+}
+
+.zoom:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.section-container {
+    padding: 50px 0 0;
+}
+
+.section-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 50px;
+}

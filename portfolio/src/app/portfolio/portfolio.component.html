@@ -1,1 +1,28 @@
-<p>portfolio works!</p>
+<div class="section-container section-one" id="portfolio">
+    <div class="container">
+        <div class="section-title text-center">Portfolio</div>
+        <div class="one-content">
+            <div class="row">
+                <ng-container *ngFor="let item of items">
+                    <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <app-portfolio-item
+                                [title]="item.title"
+                                [text]="item.text"
+                                [preview]="item.preview"
+                                [tech]="item.tech"
+                                [state]="item.state"                        
+                                [url]="item.url? item.url : null"                        
+                                [more]="item.more? item.more : null"
+                            ></app-portfolio-item>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>        
+            <div class="row justify-content-center one-more-button" id="one-more-button">
+                <!-- <div onclick="showMore()" class="portfolio-button zoom">Show more</div> -->
+                <button mat-stroked-button class="portfolio-button zoom" color="light">Show more</button>
+            </div>
+        </div>
+    </div>
+</div>

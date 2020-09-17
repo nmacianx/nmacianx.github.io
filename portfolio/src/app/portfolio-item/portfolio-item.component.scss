@@ -1,0 +1,32 @@
+@import '~src/theme.scss';
+
+.card-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-body{
+    padding-bottom: 10px !important;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 18px;
+    height: 36px;
+}
+
+.card-badges {
+    margin: 10px 0;
+    span{
+        font-size: 14px;
+        font-weight: 500 !important;
+        margin-right: 5px;
+    }
+}
+
+.card-buttons-container{
+    height: 40px;
+    a{
+        margin-right: 10px;
+    }
+}
