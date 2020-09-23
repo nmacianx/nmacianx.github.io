@@ -3,7 +3,7 @@
         <div class="section-title text-center">Portfolio</div>
         <div class="one-content">
             <div class="row">
-                <ng-container *ngFor="let item of items">
+                <ng-container *ngFor="let item of display">
                     <div class="col-sm-12 col-md-6 col-lg-4 one-item" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <app-portfolio-item
@@ -19,9 +19,9 @@
                     </div>
                 </ng-container>
             </div>        
-            <div class="row justify-content-center one-more-button" id="one-more-button">
+            <div *ngIf="more" class="row justify-content-center one-more-button" id="one-more-button">
                 <!-- <div onclick="showMore()" class="portfolio-button zoom">Show more</div> -->
-                <button mat-stroked-button class="portfolio-button zoom" color="light">Show more</button>
+                <button mat-stroked-button class="portfolio-button zoom" color="light" (click)="showMore()">Show more</button>
             </div>
         </div>
     </div>
