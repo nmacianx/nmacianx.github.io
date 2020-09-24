@@ -1,0 +1,16 @@
+<div class="section-container" id="education">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">Education</div>
+        <ng-container *ngFor="let item of items">
+            <education-item
+                [company]="item.company"
+                [location]="item.location"
+                [title]="item.title"
+                [start]="item.start"
+                [end]="item.end"                        
+                [description]="item.description"                        
+                [logo]="item.logo"
+            ></education-item>
+        </ng-container>
+    </div>
+</div>

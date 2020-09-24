@@ -1,4 +1,4 @@
-<div class="section-container section-one" id="portfolio">
+<div class="section-container" id="portfolio">
     <div class="container">
         <div class="section-title text-center">Portfolio</div>
         <div class="one-content">
@@ -19,8 +19,7 @@
                     </div>
                 </ng-container>
             </div>        
-            <div *ngIf="more" class="row justify-content-center one-more-button" id="one-more-button">
-                <!-- <div onclick="showMore()" class="portfolio-button zoom">Show more</div> -->
+            <div *ngIf="more" class="row justify-content-center one-more-button" id="one-more-button" data-aos="fade-up">
                 <button mat-stroked-button class="portfolio-button zoom" color="light" (click)="showMore()">Show more</button>
             </div>
         </div>

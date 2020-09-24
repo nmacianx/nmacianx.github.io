@@ -1,0 +1,6 @@
+@import '~src/theme.scss';
+
+.section-container{
+    background-color: map-get($colors, secondary-accent);
+    padding-bottom: 50px;
+}

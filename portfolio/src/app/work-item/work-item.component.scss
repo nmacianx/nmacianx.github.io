@@ -1,0 +1,49 @@
+.row {
+    margin-top: 50px;
+}
+
+.logo-container {
+    padding-top: 5px;
+    border-radius: 50%;
+    border: 3px solid #2e9cca;
+    background-color: #ffffff;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.logo-container2 {
+    padding: 0;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Lato';
+}
+
+.item-company {
+    font-size: 22px;
+}
+
+.item-location {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.item-date {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.item-job {
+    font-weight: 700;
+}

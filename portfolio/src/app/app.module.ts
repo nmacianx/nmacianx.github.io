@@ -9,6 +9,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { WorkComponent } from './work/work.component';
+import { EducationComponent } from './education/education.component';
+import { ContactComponent } from './contact/contact.component';
+import { WorkItemComponent } from './work-item/work-item.component';
+import { EducationItemComponent } from './education-item/education-item.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { MaterialModule } from './material/material.module';
     PrincipalComponent,
     WelcomeComponent,
     PortfolioComponent,
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    WorkComponent,
+    EducationComponent,
+    ContactComponent,
+    WorkItemComponent,
+    EducationItemComponent
   ],
   imports: [
     BrowserModule,
