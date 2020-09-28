@@ -8,9 +8,7 @@
         <span class="{{'badge badge-pill badge-' + colors[t]}}" *ngFor="let t of tech">{{t}}</span>
     </div>
     <div class="card-buttons-container">
-        <!-- <button *ngIf="more" type="button" class="btn btn-secondary" (click)="openModal()">More details</button> -->
         <a *ngIf="state == 'online'" href="{{url}}" target="_blank"><button mat-flat-button color="accent" class="zoom">Visit website</button></a>
         <button mat-flat-button color="warn" *ngIf="more" class="zoom" (click)="openModal()">More details</button>
-        <!-- <a *ngIf="state == 'online'" href="{{url}}" target="_blank"><button type="button" class="btn btn-danger">Visit website</button></a> -->
     </div>
 </div>

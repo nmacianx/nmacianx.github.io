@@ -1,1 +1,63 @@
-<p>education-item works!</p>
+<ng-container *ngIf="type === 'degree'">	
+    <div class="row justify-content-center align-items-center" data-aos="fade-up">
+        <div
+            class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+            <div class="logo-container">
+                <img src="{{'assets/' + logo}}" alt="{{organization}}">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="item-content">
+                <div class="item-title mb-3">{{title}}</div>
+                <a href="{{subtitle1_url}}" target="_blank">
+                    <div class="item-subtitle">{{subtitle1}}</div>
+                </a>
+                <a href="{{subtitle2_url}}" target="_blank">
+                    <div class="item-subtitle">{{subtitle2}}</div>
+                </a>
+                <div class="item-small">{{start}} {{end? '- ' + end : ''}}</div>
+                <div class="item-description mt-2">{{description}}</div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="type === 'specialization'">	
+    <div class="row">
+        <div 
+            class="col-sm-12 col-md-4 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0 p-0" data-aos="fade-up">
+            <div class="logo-container logo-container-min">
+                <img src="{{'assets/' + logo}}" alt="{{logo_alt}}">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-8 mb-4 mb-lg-0" data-aos="fade-up">
+            <div class="item-content align-items-center align-items-lg-start">
+                <div class="item-name text-center text-lg-left">{{title}}</div>
+                <div class="item-by mb-1">{{organization}}</div>
+                <div class="item-date mb-1">{{start}}</div>
+                <div class="buttons-container">
+                    <a href="{{url}}" target="_blank">
+                        <button mat-flat-button color="warn" class="zoom">Verify</button>
+                    </a>
+                    <button mat-flat-button color="accent" class="zoom" *ngIf="courses.length > 0" (click)="openCourses()">List courses</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-11 courses-container" *ngIf="listing">
+            <ng-container *ngFor="let course of courses">
+                curso
+            </ng-container>
+        </div>
+    </div>
+</ng-container>
+
+<!-- <ng-template #course let-etiqueta="etiqueta" let-control="control" let-requerido="requerido" let-max="max" let-tipo="tipo" let-corrector="corrector">
+	<mat-form-field>
+		<input #input matInput [placeholder]="etiqueta" [formControl]="control" [required]="requerido" [type]="tipo" [spellcheck]="corrector">
+		<mat-hint *ngIf="ayuda">{{ayuda}}</mat-hint>
+		<mat-error *ngIf="control.hasError('servidor')">{{control.getError('servidor')}}</mat-error>
+		<mat-error *ngIf="max && control.hasError('maxlength')">Este no puede exceder de {{max}} caracteres</mat-error>
+		<mat-error *ngIf="control.hasError('notNumber')">Este campo debe ser un número</mat-error>
+		<mat-error *ngIf="requerido && control.hasError('required') && !control.hasError('notNumber')">Este campo es requerido</mat-error>
+	</mat-form-field>
+</ng-template> -->
