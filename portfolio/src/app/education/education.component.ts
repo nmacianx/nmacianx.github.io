@@ -28,8 +28,13 @@ export class EducationComponent implements OnInit {
 			title: 'Applied Data Science with Python Specialization',
 			organization: 'by Univerity of Michigan',
 			start: 'Aug 2020',
-			logo: '/education/coursera.png',
-			logo_alt: 'Coursera',
+			logo: {
+				logo_sp: '/education/umich.png',
+				logo_sp_alt: 'University of Michigan',
+				background: '#00264b',
+				logo_cr: '/education/coursera.png',
+				logo_cr_alt: 'Coursera',
+			},
 			url: 'https://www.coursera.org/account/accomplishments/specialization/5K7E3B4W9UQT',
 			courses: [
 				{
@@ -69,8 +74,12 @@ export class EducationComponent implements OnInit {
 			title: 'Deep Learning Specialization',
 			organization: 'by deeplearning.ai',
 			start: 'Jan 2020',
-			logo: '/education/coursera.png',
-			logo_alt: 'Coursera',
+			logo: {
+				logo_sp: '/education/deeplearning.png',
+				logo_sp_alt: 'deeplearning.ai',
+				logo_cr: '/education/coursera.png',
+				logo_cr_alt: 'Coursera',
+			},
 			url: 'https://www.coursera.org/account/accomplishments/specialization/FYBUEFSNUSWE',
 			courses: [
 				{

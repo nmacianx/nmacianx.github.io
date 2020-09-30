@@ -1,1 +1,67 @@
-<p>contact works!</p>
+<div class="section-container" id="contact">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">Contact</div>
+        <div class="row" data-aos="fade-up">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <a class="zoom"
+                    href="mailto:contact@nicolasmacian.com.ar?subject=Contact%20from%20your%20portfolio's%20website"
+                    target="_blank"><img class="bigger-icon" src="assets/contact/mail.png" alt="Email"></a>
+                <a class="zoom" href="https://www.linkedin.com/in/nicolas-macian/    " target="_blank"><img
+                        class="normal-icon" src="assets/contact/linkedin.png" alt="LinkedIn"></a>
+                <a class="zoom" href="https://github.com/nmacianx" target="_blank"><img class="normal-icon" src="assets/contact/github.png"
+                        alt="Github"></a>
+            </div>
+        </div>
+        <div class="row or-row justify-content-center my-4" data-aos="fade-up">
+            OR
+        </div>
+        <div class="row no-gutters" data-aos="fade-up">
+            <form [formGroup]="contactForm">
+                <div *ngIf="loading" class="loading">
+                    <img src="assets/contact/loading.svg" alt="spinner">
+                </div>                
+                <mat-form-field class="input-container" appearance="outline" floatLabel="always">
+                    <mat-label>Email</mat-label>
+					<input matInput placeholder="Your email address" formControlName="email">
+					<mat-error *ngIf="contactForm.controls['email'].hasError('required')">This field is required.</mat-error>
+					<mat-error *ngIf="contactForm.controls['email'].hasError('email')">Email format is not valid.</mat-error>
+                </mat-form-field>
+                <mat-form-field class="input-container" appearance="outline" floatLabel="always">
+                    <mat-label>Subject</mat-label>
+                    <input matInput placeholder="Subject" formControlName="subject">
+                    <mat-error *ngIf="contactForm.controls['subject'].hasError('required')">This field is required.</mat-error>                    
+                    <mat-error *ngIf="contactForm.controls['subject'].hasError('maxlength')">Subject can't be longer than 100 characters. ({{contactForm.controls['subject'].value.length}})</mat-error>
+                </mat-form-field>
+                <mat-form-field class="input-container" appearance="outline" floatLabel="always">
+                    <mat-label>Message</mat-label>
+					<textarea matInput placeholder="Type your message here" formControlName="message" rows="3"></textarea>
+                    <mat-error *ngIf="contactForm.controls['message'].hasError('required')">This field is required.</mat-error>
+                    <mat-error *ngIf="contactForm.controls['message'].hasError('maxlength')">Message can't be longer than 500 characters. ({{contactForm.controls['message'].value.length}})</mat-error>
+                </mat-form-field>
+                <ng-container *ngIf="error">
+                    <hr class="error-divider" />
+                    <div class="error-container">An error has ocurred. Please try again later.</div>
+                </ng-container>
+                <button mat-flat-button color="primary" class="zoom" (click)="submit()" type="button" *ngIf="!loading && !success">Submit</button>
+                <div class="success-message" *ngIf="success">Message was sent successfully. I'll be in touch shortly!</div>
+            </form>
+            <!-- <form action="https://send.pageclip.co/BWohoJeXyiqlkrXtqU6CE4h8D8dHO0CJ/Contact" class="pageclip-form d-flex flex-column"
+                method="post">
+                <div class="form-message1 mb-3 alert alert-danger">Something went wrong with the form submission. Please send an email or try again later.</div>
+                <div class="form-message2 mb-3 alert alert-success">Form submission was successful. I'll be in touch shortly.</div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Your email address" required/>
+                </div>               
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required/>
+                </div>           
+                <div class="form-group">
+                    <textarea name="body" class="form-control" rows="4" placeholder="Type your message here" required></textarea>
+                </div>                          
+                <button class="btn btn-primary btn-contact pageclip-form__submit" type="submit">
+                    <span>Submit</span>
+                </button>
+            </form> -->
+        </div>            
+    </div>
+</div>

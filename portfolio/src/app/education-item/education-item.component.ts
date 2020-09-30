@@ -38,10 +38,7 @@ export class EducationItemComponent implements OnInit {
 	description?: string;
 
 	@Input()
-	logo: string;
-
-	@Input()
-	logo_alt?: string;
+	logo: any;
 
 	@Input()
 	url?: string;
