@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { off } from 'process';
 
 declare var particlesJS: any;
 
@@ -9,14 +10,16 @@ declare var particlesJS: any;
 })
 export class WelcomeComponent implements OnInit {
 
+	@Output() scroll: EventEmitter<{target: string, duration: number}> = new EventEmitter();
+
 	constructor() { }
 
 	ngOnInit(): void {
 		particlesJS.load('particles-js', 'assets/particles.json');
 	}
 
-	customScroll(target: string, offset: number){
-
+	customScroll(target: string, duration: number){
+		this.scroll.emit({target: target, duration: duration});
 	}
 
 }

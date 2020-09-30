@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { MediaService } from '../media.service';
+import { DOCUMENT } from '@angular/common';
+import { PageScrollService } from 'ngx-page-scroll-core';
 import * as AOS from 'aos';
 
 @Component({
@@ -110,7 +112,7 @@ export class PortfolioComponent implements OnInit {
 		}, 
 	];
 
-	constructor(public media: MediaService) { }
+	constructor(public media: MediaService, private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any) { }
 
 	ngOnInit(): void {
 		if (this.media.breakpointSm.matches){
@@ -127,7 +129,7 @@ export class PortfolioComponent implements OnInit {
 		this.total = this.items.length;
 	}
 
-	showMore(){
+	showMore(event){
 		if (this.showing + this.add >= this.total){
 			this.showing = this.total;
 			this.more = false;
@@ -135,5 +137,10 @@ export class PortfolioComponent implements OnInit {
 			this.showing += this.add;
 		}
 		this.display = this.items.slice(0, this.showing);
+		this.pageScrollService.scroll({
+			document: this.document,
+			scrollTarget: event.srcElement,
+			scrollOffset: 200
+		});
 	}
 }

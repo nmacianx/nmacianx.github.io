@@ -30,27 +30,19 @@ export class ContactComponent implements OnInit {
 	}
 
 	submit(){
-		// TODO, intercambiar codigo comentado
-		// if (this.validate()){
-		// 	this.loading = true;
-		// 	const data = this.contactForm.getRawValue();
-		// 	console.log(data);
-		// 	this.submission.sendForm(data).subscribe(() => {
-		// 		this.error = false;
-		// 		this.loading = false;
-		// 		this.success = true;
-		// 		this.contactForm.disable();
-		// 	}, (error) => {
-		// 		this.error = true;
-		// 		this.loading = false;
-		// 	});
-		// }
-		this.loading = true;
-		setInterval(() => {
-			this.loading = false;
-			this.success = true;
-			this.contactForm.disable();
-		}, 500);
+		if (this.validate()){
+			this.loading = true;
+			const data = this.contactForm.getRawValue();
+			this.submission.sendForm(data).subscribe(() => {
+				this.error = false;
+				this.loading = false;
+				this.success = true;
+				this.contactForm.disable();
+			}, (error) => {
+				this.error = true;
+				this.loading = false;
+			});
+		}
 	}
 
 }
