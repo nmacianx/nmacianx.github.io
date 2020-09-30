@@ -30,6 +30,7 @@ export class ContactComponent implements OnInit {
 	}
 
 	submit(){
+		// TODO, intercambiar codigo comentado
 		// if (this.validate()){
 		// 	this.loading = true;
 		// 	const data = this.contactForm.getRawValue();
@@ -38,10 +39,10 @@ export class ContactComponent implements OnInit {
 		// 		this.error = false;
 		// 		this.loading = false;
 		// 		this.success = true;
+		// 		this.contactForm.disable();
 		// 	}, (error) => {
 		// 		this.error = true;
 		// 		this.loading = false;
-		// 		console.log(error);
 		// 	});
 		// }
 		this.loading = true;
@@ -49,7 +50,7 @@ export class ContactComponent implements OnInit {
 			this.loading = false;
 			this.success = true;
 			this.contactForm.disable();
-		}, 2000);
+		}, 500);
 	}
 
 }

@@ -39,6 +39,20 @@ form{
             font-size: 20px;
             line-height: 24px;
         }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        {
+            border: none;
+            -webkit-text-fill-color: #ffffff;
+            background-color: transparent;
+            -webkit-box-shadow: 0 0 0px 1000px map-get($colors, secondary) inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
     }
 
     ::ng-deep .mat-input-element::placeholder{
@@ -94,12 +108,17 @@ form{
         width: 100%;
         text-align: center;
         font-size: 20px;
-        color: #008b00;
-        background-color: #f2fde4;
+        color: map-get($colors, secondary);
+        background-color: map-get($colors, primary);
         border-radius: 25px;
-        border: 2px solid #008b00;
+        border: 2px solid map-get($colors, primary);
         line-height: 2;
         padding: 0 10px;
+
+        mat-icon{
+            vertical-align: middle; 
+            font-size: 20px;
+        }
     }
     
 }
