@@ -140,7 +140,8 @@ export class PortfolioComponent implements OnInit {
 		this.pageScrollService.scroll({
 			document: this.document,
 			scrollTarget: event.srcElement,
-			scrollOffset: 200
+			scrollOffset: 200,
+			duration: 300
 		});
 	}
 }
