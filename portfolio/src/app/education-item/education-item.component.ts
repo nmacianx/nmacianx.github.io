@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { PageScrollService } from 'ngx-page-scroll-core';
+import { MediaService } from '../media.service';
 
 @Component({
 	selector: 'app-education-item',
@@ -48,13 +51,21 @@ export class EducationItemComponent implements OnInit {
 
 	listing: boolean = false;
 
-	constructor() { }
+	constructor(public media: MediaService, private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any) { }
 
 	ngOnInit(): void {
 	}
 
-	openCourses(){
+	openCourses(event){
 		this.listing = !this.listing;
+		if (this.listing){
+			this.pageScrollService.scroll({
+				document: this.document,
+				scrollTarget: event.srcElement,
+				scrollOffset: this.media.breakpointSm.matches? 300 : 150,
+				duration: 500
+			});
+		}
 	}
 
 }

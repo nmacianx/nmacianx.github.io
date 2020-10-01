@@ -30,7 +30,7 @@
                 <img src="{{'assets/' + logo.logo_sp}}" alt="{{logo.logo_sp_alt}}">
             </div>
         </div>
-        <div class="col-sm-12 col-md-8 mb-4 mb-lg-0" data-aos="fade-up">
+        <div class="col-sm-12 col-md-8 mb-4 mb-lg-0 align-self-center" data-aos="fade-up">
             <div class="item-content align-items-center align-items-lg-start">
                 <div class="item-name text-center text-lg-left">{{title}}</div>
                 <div class="item-by mb-1">{{organization}}</div>
@@ -39,11 +39,11 @@
                     <a href="{{url}}" target="_blank">
                         <button mat-flat-button color="secondary-dark" class="zoom">Verify</button>
                     </a>
-                    <button mat-flat-button color="accent" class="zoom" *ngIf="courses.length > 0" (click)="openCourses()">List courses</button>
+                    <button mat-flat-button color="accent" class="zoom" *ngIf="courses.length > 0" (click)="openCourses($event)">List courses</button>
                 </div>
             </div>
         </div>
-        <div class="col-11 courses-container" *ngIf="listing">
+        <div class="col-11 courses-container" *ngIf="listing" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700">
             <ng-container *ngFor="let course of courses">
                 <ng-container *ngTemplateOutlet="simple, context:{logo: logo, title: course.title, organization: course.organization, start: course.start, url: course.url}"></ng-container>
             </ng-container>
@@ -52,7 +52,7 @@
 </ng-container>
 
 <ng-template #simple let-logo="logo" let-title="title" let-organization="organization" let-start="start"  let-url="url">
-	<div class="row inner-course">
+	<div class="row inner-course align-items-center">
         <div class="col-3 pl-2 pr-0">
             <div class="logo-container">
                 <img src="{{'assets/' + logo.logo_cr}}" alt="{{logo.logo_cr_alt}}">
