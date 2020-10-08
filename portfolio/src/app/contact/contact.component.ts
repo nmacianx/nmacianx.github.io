@@ -7,8 +7,6 @@ import { SubmissionService } from '../submission.service';
 	styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
-
 	contactForm: FormGroup;
 	success: boolean = false;
 	error: boolean = null;

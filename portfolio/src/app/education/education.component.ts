@@ -114,6 +114,19 @@ export class EducationComponent implements OnInit {
 				},
 			]
 		},
+		{
+			type: 'course',
+			title: 'Blockchain\'s Disruption',
+			organization: 'by Universidad Austral',
+			start: 'Oct 2020',
+			logo: {
+				logo_sp: '/education/austral.png',
+				logo_sp_alt: 'Universidad Austral',
+				background: '#103692',
+			},
+			url: 'https://www.coursera.org/account/accomplishments/verify/R6LF969GXDJG',
+			courses: []
+		},
 	];
 	courses: any[] = [];
 

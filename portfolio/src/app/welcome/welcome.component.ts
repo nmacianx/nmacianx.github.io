@@ -9,8 +9,8 @@ declare var particlesJS: any;
 	styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-
 	@Output() scroll: EventEmitter<{target: string, duration: number}> = new EventEmitter();
+	open: boolean = false;
 
 	constructor() { }
 
@@ -20,6 +20,10 @@ export class WelcomeComponent implements OnInit {
 
 	customScroll(target: string, duration: number){
 		this.scroll.emit({target: target, duration: duration});
+	}
+
+	toggleMenu(){
+		this.open = !this.open;
 	}
 
 }

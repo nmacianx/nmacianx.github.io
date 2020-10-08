@@ -22,7 +22,7 @@
     </div>
 </ng-container>
 
-<ng-container *ngIf="type === 'specialization'">	
+<ng-container *ngIf="type === 'specialization' || type === 'course'">	
     <div class="row specialization">
         <div 
             class="col-sm-12 col-md-4 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0 p-0" data-aos="fade-up">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-11 courses-container" *ngIf="listing" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700">
+        <div class="col-11 courses-container" *ngIf="listing && type === 'specialization'" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700">
             <ng-container *ngFor="let course of courses">
                 <ng-container *ngTemplateOutlet="simple, context:{logo: logo, title: course.title, organization: course.organization, start: course.start, url: course.url}"></ng-container>
             </ng-container>

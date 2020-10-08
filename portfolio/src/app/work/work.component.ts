@@ -13,7 +13,7 @@ export class WorkComponent implements OnInit {
 			location: "Tucumán, Argentina",			
 			title: "IT Intern",
 			start: "Feb 2020",
-			end: null,
+			end: "Sep 2020",
 			description: "As an IT intern, my role varies across multiple tasks. Most of the time I provide hardware, software and network support for the factory's personnel. I also work on personal projects for the company.",
 			logo: "scania.png"
 		}, 
