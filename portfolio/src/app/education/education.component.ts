@@ -116,6 +116,18 @@ export class EducationComponent implements OnInit {
 		},
 		{
 			type: 'course',
+			title: 'Google Cloud Platform Fundamentals: Core Infrastructure',
+			organization: 'by Google',
+			start: 'Oct 2020',
+			logo: {
+				logo_sp: '/education/google.png',
+				logo_sp_alt: 'Google',
+			},
+			url: 'https://www.coursera.org/account/accomplishments/verify/ZVGNRZZWF29B',
+			courses: []
+		},
+		{
+			type: 'course',
 			title: 'Blockchain\'s Disruption',
 			organization: 'by Universidad Austral',
 			start: 'Oct 2020',

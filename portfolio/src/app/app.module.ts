@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { WorkItemComponent } from './work-item/work-item.component';
 import { EducationItemComponent } from './education-item/education-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { DetailsModalComponent } from './details-modal/details-modal.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     WorkItemComponent,
     EducationItemComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsModalComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,9 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+		DetailsModalComponent,
+	],
 })
 export class AppModule { }

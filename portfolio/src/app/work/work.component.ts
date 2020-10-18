@@ -9,12 +9,21 @@ export class WorkComponent implements OnInit {
 
 	items: any[] = [
 		{
+			company: "Rockstar Coders",
+			location: "Remote",			
+			title: "Associate Developer",
+			start: "Oct 2020",
+			end: null,
+			description: "Currently working with React.",
+			logo: "rockstar.png"
+		}, 
+		{
 			company: "Scania",
 			location: "Tucumán, Argentina",			
 			title: "IT Intern",
 			start: "Feb 2020",
 			end: "Sep 2020",
-			description: "As an IT intern, my role varies across multiple tasks. Most of the time I provide hardware, software and network support for the factory's personnel. I also work on personal projects for the company.",
+			description: "As an IT intern, my role varied across multiple tasks. Most of the time I provided hardware, software and network support for the factory's personnel. I also worked on personal projects for the company.",
 			logo: "scania.png"
 		}, 
 		{

@@ -25,3 +25,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: #ffffff;
     margin-bottom: 50px;
 }
+
+.portfolioDialog{
+    mat-dialog-container{
+        // padding: 0;
+    }
+}

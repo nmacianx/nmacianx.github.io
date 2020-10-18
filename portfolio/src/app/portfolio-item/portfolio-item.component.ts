@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { DetailsModalComponent } from '../details-modal/details-modal.component';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
 	selector: 'app-portfolio-item',
 	templateUrl: './portfolio-item.component.html',
@@ -30,7 +31,7 @@ export class PortfolioItemComponent implements OnInit {
 
 	colors: any;
 
-	constructor() { }
+	constructor(private dialog: MatDialog) { }
 
 	ngOnInit(): void {
 		this.colors = {
@@ -44,6 +45,10 @@ export class PortfolioItemComponent implements OnInit {
 	}
 
 	openModal(){
-
+		const popup = this.dialog.open(DetailsModalComponent, {
+				disableClose: true, autoFocus: false, minHeight: 520, maxHeight: 600, 
+				width: '700px', maxWidth: '80%',  panelClass: 'portfolioDialog',
+				data: {title: this.title, tech: this.tech, state: this.state, url: this.url, more: this.more}
+			});
 	}
 }
