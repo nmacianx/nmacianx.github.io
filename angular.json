@@ -32,6 +32,7 @@
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/aos/dist/aos.css",
               "src/styles.scss",
+              "src/variables.scss",
               "src/theme.scss"
             ],
             "scripts": [
