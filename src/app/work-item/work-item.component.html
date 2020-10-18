@@ -1,0 +1,22 @@
+<div class="row justify-content-center align-items-center" data-aos="fade-up">
+    <div
+        class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+        <div class="logo-container">
+            <img src="{{'assets/work/' + logo}}" alt="{{company}}">
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-6">
+        <div class="item-content">
+            <div class="d-flex flex-row align-items-end">
+                <div class="item-company mr-2">{{company}}</div>
+                <ng-container *ngIf="location">
+                    <div class="mx-2">-</div>
+                    <div class="item-location ml-2">{{location}}</div>
+                </ng-container>
+            </div>
+            <div class="item-job">{{title}}</div>
+            <div class="item-date mb-3">{{start}} - {{end? end : 'present'}}</div>
+            <div class="item-description">{{description}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.btn-contact{
+    background-color: #01d6ea;
+    border-color: #01d6ea;
+    font-weight: 700;
+}
+
+.btn-contact:hover{
+    background-color: #02bdcf;
+    border-color: #02bdcf;    
+}
+
+.btn-contact:not(:disabled):not(.disabled):active{
+    background-color: #00a5b5;
+    border-color: #00a5b5;    
+}
+
+.section-four .form-control{
+    background-color: #29648a;
+    border: 2px solid #01d6ea;
+    color: #ffffff;
+}
+
+.section-four .form-control::placeholder { 
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.modal a .disabled{
+    cursor: default;
+}
+
+@media (min-width: 768px){
+    .section-four .form-control{ 
+        font-size: 22px;
+    }    
+}

@@ -1,0 +1,52 @@
+@import '~src/theme.scss';
+
+.row {
+    margin-top: 50px;
+}
+
+.logo-container {
+    padding-top: 5px;
+    border-radius: 50%;
+    border: 3px solid map-get($colors, secondary-accent);;
+    background-color: #ffffff;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    z-index: 3;
+    text-align: center;
+}
+
+.logo-container img {
+    margin: 0 auto;
+    width: 190px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Lato';
+}
+
+.item-company {
+    font-size: 22px;
+}
+
+.item-location {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.item-date {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.item-job {
+    font-weight: 700;
+}
