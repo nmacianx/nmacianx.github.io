@@ -1,0 +1,121 @@
+@import '~src/theme.scss';
+
+.row {
+    margin-top: 0px;
+    scroll-margin: 50px;
+}
+
+.logo-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #29648a;
+    background-color: #ffffff;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+
+    img{
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Lato';
+
+    a, a:hover, a:active {
+        color: #ffffff;
+    }
+}
+
+.item-title {
+    font-weight: 700;
+}
+
+.item-subtitle {
+    line-height: 30px;
+}
+
+.item-small {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.item-description{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.logo-container-min {
+    width: 150px;
+    height: 150px;
+}
+
+.item-name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.item-by {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.item-date {
+    font-size: 18px;
+}
+
+.buttons-container{
+    a{
+        margin-right: 10px;
+    }
+}
+
+.courses-container{
+    margin: 10px auto 0;
+    background-color: map-get($colors, secondary);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.mat-secondary-dark{
+    background-color: map-get($colors, secondary-dark);
+    color: #ffffff;
+}
+
+.inner-course{
+    padding: 10px 0;
+
+    .logo-container{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .item-name {
+        font-size: 18px;
+    }
+    
+    .item-by, .item-date {
+        font-size: 16px;
+    }
+
+    .mat-secondary-accent{
+        background-color: map-get($colors, secondary-accent);
+        color: #ffffff;
+    }
+}
+
+.specialization{
+    margin-bottom: 40px;
+}
