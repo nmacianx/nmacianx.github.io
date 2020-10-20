@@ -30,6 +30,13 @@ export class PortfolioComponent implements OnInit {
 			}
 		}, 
 		{
+			title: "Lifetime Civic",
+			text: "Form submission site to register employees for a company.",
+			preview: "preview/portfolio12.jpg",
+			tech: ["Django", "Javascript"],
+			state: "private"
+		}, 
+		{
 			title: "A+E Eats",
 			text: "Form submission site for food ordering.",
 			preview: "preview/portfolio05.jpg",
