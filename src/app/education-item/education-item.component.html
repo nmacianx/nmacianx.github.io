@@ -7,15 +7,20 @@
     </div>
     <div class="col-sm-12 col-md-8 col-lg-6">
       <div class="item-content">
-        <div class="item-title mb-3">{{title}}</div>
+        <div class="item-title mb-2">{{title}}</div>
         <a href="{{subtitle1_url}}" target="_blank">
           <div class="item-subtitle">{{subtitle1}}</div>
         </a>
         <a href="{{subtitle2_url}}" target="_blank">
           <div class="item-subtitle">{{subtitle2}}</div>
         </a>
-        <div class="item-small">{{start}} {{end? '- ' + end : ''}}</div>
-        <div class="item-description mt-2">{{description}}</div>
+        <div class="item-small mb-3">{{start}} {{end? '- ' + end : ''}}</div>
+        <div class="item-description mt-1" *ngFor="let item of description">{{item}}</div>
+        <div class="buttons-container mt-3 text-center text-md-left">
+          <a href="{{url}}" target="_blank">
+            <button mat-flat-button color="secondary-dark" class="zoom">Verify</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -23,14 +28,14 @@
 
 <ng-container *ngIf="type === 'specialization' || type === 'course'">
   <div class="row specialization">
-    <div class="col-sm-12 col-md-4 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0 p-0"
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center justify-content-md-end mb-4 mb-lg-0 p-0"
       data-aos="fade-up">
       <div class="logo-container logo-container-min"
         [ngStyle]="{'background-color': logo.background ? logo.background : '#ffffff' }">
         <img src="{{'assets/' + logo.logo_sp}}" alt="{{logo.logo_sp_alt}}">
       </div>
     </div>
-    <div class="col-sm-12 col-md-8 mb-4 mb-lg-0 align-self-center" data-aos="fade-up">
+    <div class="col-sm-12 col-md-9 mb-4 mb-lg-0 align-self-center" data-aos="fade-up">
       <div class="item-content align-items-center align-items-lg-start">
         <div class="item-name text-center text-lg-left">{{title}}</div>
         <div class="item-by mb-1">{{organization}}</div>

@@ -38,7 +38,7 @@ export class EducationItemComponent implements OnInit {
 	end?: string;
 
 	@Input()
-	description?: string;
+	description?: string[];
 
 	@Input()
 	logo: any;

@@ -17,9 +17,10 @@ export class EducationComponent implements OnInit {
 			subtitle2_url: 'http://www.unt.edu.ar/',
 			organization: 'Universidad Nacional de Tucumán',
 			start: '2016',
-			end: 'Oct 2020 (expected)',
-			description: 'I am developing a facial verification system on a Raspberry Pi 4 as my graduation project.',
-			logo: '/work/unt.png'
+			end: 'Nov 2020 (expected)',
+			description: ["Ranked first student at Facultad de Ciencias Exactas y Tecnología (school including ten engineering degrees) for the 2020 year with an average of 9.35/10.", 'I developed a facial verification system on a Raspberry Pi 4 as my graduation project using Tiny YoloV3 and Keras.'],
+			logo: '/work/unt.png',
+			url: 'https://appserver.facet.unt.edu.ar/mesaentradas/index.php/resoluciones/mostrararchivo/40238/15166'
 		}
 	];
 	specializations: any[] = [
