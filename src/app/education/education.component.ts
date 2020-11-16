@@ -10,14 +10,14 @@ export class EducationComponent implements OnInit {
 	items: any[] = [
 		{
 			type: 'degree',
-			title: 'Computer Engineering student',
+			title: 'Computer Engineer',
 			subtitle1: 'Facultad de Ciencias Exactas y Tecnología',
 			subtitle1_url: 'https://www.facet.unt.edu.ar/',
 			subtitle2: 'Universidad Nacional de Tucumán',
 			subtitle2_url: 'http://www.unt.edu.ar/',
 			organization: 'Universidad Nacional de Tucumán',
-			start: '2016',
-			end: 'Nov 2020 (expected)',
+			start: 'March 2016',
+			end: 'Nov 2020',
 			description: ["Ranked first student at Facultad de Ciencias Exactas y Tecnología (school including ten engineering degrees) for the 2020 year with an average of 9.35/10.", 'I developed a facial verification system on a Raspberry Pi 4 as my graduation project using Tiny YoloV3 and Keras.'],
 			logo: '/work/unt.png',
 			url: 'https://appserver.facet.unt.edu.ar/mesaentradas/index.php/resoluciones/mostrararchivo/40238/15166'
