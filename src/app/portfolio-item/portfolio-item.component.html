@@ -1,0 +1,17 @@
+<img class="card-img-top" src="{{ 'assets/portfolio/' + preview }}" alt="{{ title }}" />
+<div class="card-body">
+  <div class="card-title" *ngIf="!redacted">{{ title }}</div>
+  <div class="card-title-redacted" *ngIf="redacted">Redacted Name</div>
+  <div class="card-text">
+    {{ text }}
+  </div>
+  <div class="card-badges">
+    <span class="{{ 'badge badge-pill badge-' + colors[t] }}" *ngFor="let t of tech">{{ t }}</span>
+  </div>
+  <div class="card-buttons-container">
+    <a *ngIf="state == 'online'" href="{{ url }}" target="_blank"
+      ><button mat-flat-button color="accent" class="zoom">Visit website</button></a
+    >
+    <!-- <button mat-flat-button color="warn" *ngIf="more" class="zoom" (click)="openModal()">More details</button> -->
+  </div>
+</div>

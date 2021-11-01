@@ -1,0 +1,13 @@
+@import '~src/variables.scss';
+@import '~@angular/material/theming';
+@include mat-core();
+
+$nm-palette-primary: mat-palette($nm-primary);
+$nm-palette-secondary: mat-palette($nm-secondary);
+$nm-palette-warn: mat-palette($mat-red);
+
+// include the custom theme components into a theme object
+$nm-theme: mat-light-theme($nm-palette-primary, $nm-palette-secondary, $nm-palette-warn);
+
+// include the custom theme object into the angular material theme
+@include angular-material-theme($nm-theme);

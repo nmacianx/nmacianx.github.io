@@ -1,0 +1,17 @@
+<div class="section-container" id="work">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">Work experience</div>
+    <ng-container *ngFor="let item of items">
+      <app-work-item
+        [company]="item.company"
+        [location]="item.location"
+        [title]="item.title"
+        [start]="item.start"
+        [end]="item.end"
+        [description]="item.description"
+        [logo]="item.logo"
+        [jobPositions]="item.jobPositions"
+      ></app-work-item>
+    </ng-container>
+  </div>
+</div>

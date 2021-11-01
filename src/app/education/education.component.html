@@ -1,0 +1,20 @@
+<div class="section-container" id="education">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">Education</div>
+    <ng-container *ngFor="let item of items">
+      <app-education-item [type]="item.type" [title]="item.title" [subtitle1]="item.subtitle1"
+        [subtitle1_url]="item.subtitle1_url" [subtitle2]="item.subtitle2" [subtitle2_url]="item.subtitle2_url"
+        [organization]="item.organization" [start]="item.start" [end]="item.end" [description]="item.description"
+        [logo]="item.logo" [url]="item.url"></app-education-item>
+    </ng-container>
+    <hr class="divider w-50" />
+    <div class="row">
+      <ng-container *ngFor="let item of specializations">
+        <div class="col-sm-12 col-lg-6 align-self-start">
+          <app-education-item [type]="item.type" [title]="item.title" [organization]="item.organization"
+            [start]="item.start" [logo]="item.logo" [url]="item.url" [courses]="item.courses"></app-education-item>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

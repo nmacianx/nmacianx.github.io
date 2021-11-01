@@ -1,0 +1,6 @@
+@import '~src/variables.scss';
+
+.section-container{
+    background-color: map-get($colors, secondary-dark);
+    padding-bottom: 50px;
+}

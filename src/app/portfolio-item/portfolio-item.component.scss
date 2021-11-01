@@ -1,0 +1,48 @@
+@import '~src/variables.scss';
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.card-title-redacted {
+  height: 24px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 5px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.card-body {
+  padding-bottom: 10px !important;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 18px;
+  height: 36px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.card-badges {
+  margin: 10px 0;
+  span {
+    font-size: 14px;
+    font-weight: 500 !important;
+    margin-right: 5px;
+  }
+}
+
+.card-buttons-container {
+  height: 40px;
+  a {
+    margin-right: 10px;
+  }
+}
